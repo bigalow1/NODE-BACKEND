@@ -1,0 +1,40 @@
+CRUD operation 
+Create - 
+Read - 
+Update - 
+Delete - 
+
+URI = Uniform Resorce Identifier (a name for that mongodb connection string)
+
+HTTP Method 
+    GET - Read 
+    POST - Create 
+    PUT - Update 
+    DELETE - Delete 
+
+
+Relational Database stores data in a structured form. Rows and columns. And it uses SQL to query the database. 
+Examples of relational database are postgreSQL, MySQL etc 
+
+Non relational database stores data in a flexible form. Like documents or key-value pairs. 
+Examples of non-relational database is MongoDb, crouchDb, Amazon DynamoDb etc;
+
+MongoDb Atlas - online 
+MongoDb Compass - local 
+
+
+MVC 
+Model - Define the structure of the database. 
+      - It is used to talk to the database. 
+View - This is what the user sees. i.e., HTML, CSS or frontend templates or frameworks.
+Controller - It handles requests and decides what to do. It is what connects what the user sees and the database. 
+
+
+Authentication And Authorization 
+
+Authentication deals with checking the credentials of a user and giving a token. 
+
+Authorization deals with allowing users to access certain routes usually based on the role of that user. 
+
+Role Based Authentication
+
