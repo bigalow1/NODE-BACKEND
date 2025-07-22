@@ -10,7 +10,7 @@ const createPost = async (req,res)=>{
             return res.status(400).json({message:"All fields are required"});                                                       
 
              }   const image ={
-           url: req.file.path,
+           url: req.file?.path,
            filename: req.file?.filename
     }
 
