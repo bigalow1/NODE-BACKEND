@@ -6,6 +6,7 @@ import userRoutes from './routes/userRoutes.js'
 import postRoutes from './routes/postRoutes.js'
 import commentRoutes from './routes/commentRoutes.js'
 import cookieParser from "cookie-parser";
+import cors from 'cors';
 import { config } from "dotenv";
 config()
 import { del1post, createPost, get1post, getAllpost, update1post } from "./controllers/postController.js";
@@ -28,6 +29,11 @@ app.use(e.json());
 app.use(e.urlencoded({extended:true}))
 
 app.use(e.static('./box'))
+
+app.use(cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+}))
 
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'box','index.html'))
